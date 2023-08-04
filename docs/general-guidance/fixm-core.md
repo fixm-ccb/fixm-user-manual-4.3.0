@@ -1,17 +1,17 @@
 # FIXM Core
 
-**FIXM Core** provides globally harmonized flight data structures that can be exchanged in various contexts. Only flight data structures that are globally applicable qualify for FIXM Core. Flight data structures that are local or regional in nature do not qualify for **FIXM Core**. An **Extensions** mechanism is implemented so that **FIXM Core** can be extended in order to cover these local or regional data structures, as appropriate.
+**FIXM Core** provides globally harmonized flight data structures that can be exchanged in various contexts. The scope of `FIXM Core 4.3.0` is the following: provide harmonised representation of the flight data structures exchanged 1) in the context of FF-ICE/R1 as specified in the FF-ICE/R1 Implementation Guidance Manual <sup>[[I-06]](#references)</sup> (main context of use), and 2) in the context of ICAO GADSS/LADR as specified in ICAO Doc 10150 <sup>[[I-16]](#references)</sup>.
 
-The main context for the use of **FIXM Core** is ICAO FF-ICE. Therefore, **FIXM Core** currently captures the flight data structures that are identified in the ICAO FF-ICE Implementation Guidance Manual 0.91. 
+Only flight data structures that are globally applicable qualify for FIXM Core. Flight data structures that are local or regional in nature do not qualify for **FIXM Core**. An **Extensions** mechanism is implemented so that **FIXM Core** can be extended in order to cover these local or regional data structures, as appropriate.
 
 **FIXM Core** exists as a standard for exchanging flight data rather than as a set of pre-defined messages, allowing flexible exchanges between users rather than enforcing rigid communication patterns. However, once a given exchange is well-defined, it is useful to be able to enforce syntax and content validation checks to ensure the data being exchanged is of high quality. This is addressed by **FIXM Applications**.
 
-## What is a valid FIXM Core usage
+## What is a Valid FIXM Core Usage
 
 The general requirements for a valid **FIXM Core** usage are the
 following:
 
-### Requirement on data structure
+### Requirement on Data Structure
 
 | | | |
 |-|-|-|
@@ -23,7 +23,7 @@ following:
 #### Example of FIXM Core usage satisfying the requirement on data structure
 
 ```xml
-<fx:aerodrome>
+<fx:departureAerodrome>
 
     <fb:locationIndicator>EBBR</fb:locationIndicator>
 
@@ -37,7 +37,7 @@ aerodrome references defined by the FIXM Core XML schemas.
 #### Example of FIXM Core usage **NOT** satisfying the requirement on data structure
 
 ```xml
-<fx:aerodrome>
+<fx:departureAerodrome>
 
     <fb:locationIndicator>BRU</fb:locationIndicator>
 
@@ -55,12 +55,12 @@ usage.
 
 This example below features a valid XML schema that defines a Flight
 Identification structure comprising the departure & arrival aerodrome
-references, the aircraft identification and the estimated off-block
+references, the aircraft identification, and the estimated off-block
 time. It also features an example XML sample that is valid against this
 schema.
 
 ```xml
-<xs:schema xmlns:wrong="fixm_as_library_of_types" xmlns:fx="http://www.fixm.aero/flight/4.2" xmlns:fb="http://www.fixm.aero/base/4.2" xmlns:etc="..." >
+<xs:schema xmlns:wrong="fixm_as_library_of_types" xmlns:fx="http://www.fixm.aero/flight/4.3" xmlns:fb="http://www.fixm.aero/base/4.3" xmlns:etc="..." >
 <!– […] –>
     <xs:element name="FlightIdentification" type="wrong:FlightIdentificationType"/>
     <xs:complexType name="FlightIdentificationType">
@@ -68,14 +68,14 @@ schema.
             <xs:element name="departureAerodrome" type="fb:AerodromeReferenceType"/>
             <xs:element name="arrivalAerodrome" type="fb:AerodromeReferenceType"/>
             <xs:element name="ACID" type="fb:AircraftIdentificationType"/>
-            <xs:element name="EOBT" type="fb:TimeType"/>
+            <xs:element name="EOBT" type="fb:DateTimeUtcType"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
 ```
 
 ```xml
-<wrong:FlightIdentification xmlns:wrong="..." xmlns:fb="http://www.fixm.aero/base/4.2" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="...">
+<wrong:FlightIdentification xmlns:wrong="..." xmlns:fb="http://www.fixm.aero/base/4.3" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="...">
     <wrong:departureAerodrome>
         <fb:name>LES BARAQUES</fb:name>
     </wrong:departureAerodrome>
@@ -83,7 +83,7 @@ schema.
         <fb:name>NORTHFALL MEADOW</fb:name>
     </wrong:arrivalAerodrome>
     <wrong:ACID>BLXI</wrong:ACID>
-    <wrong:EOBT>1909-07-25T04:41:00.000Z</wrong:EOBT>
+    <wrong:EOBT>1909-07-25T04:41:00Z</wrong:EOBT>
 </wrong:FlightIdentification>
 <!– https://en.wikipedia.org/wiki/Louis\_Bl%C3%A9riot\#1909\_Channel\_crossing –>
 ```
@@ -96,11 +96,11 @@ typing these elements (e.g. `type="fb:AerodromeReferenceType"`).
 This example illustrates the reuse of FIXM Core as a library of
 datatypes. While this practice is technically feasible and produces
 valid schemas, it is not considered a valid FIXM Core usage because it
-breaks the hierarchy of properties defined by FIXM Core. An information
+breaks the hierarchy defined by FIXM Core. An information
 service relying on such an implementation practice would fail to satisfy
 the FIXM Core requirement on data structure.
 
-### Requirement on data correctness
+### Requirement on Data Correctness
 
 | | | |
 |-|-|-|
@@ -111,14 +111,14 @@ the FIXM Core requirement on data structure.
 #### Example of FIXM Core usage satisfying the requirement on data correctness
 
 ```xml
-<fx:verticalRange>
+<fx:range>
   <fb:lowerBound>
     <fb:flightLevel uom="FL">240</fb:flightLevel>
   </fb:lowerBound>
   <fb:upperBound>
     <fb:flightLevel uom="FL">250</fb:flightLevel>
   </fb:upperBound>
-</fx:verticalRange>
+</fx:range>
 ```
 
 This example shows the FIXM encoding of vertical range \[FL240;FL250\].
@@ -129,28 +129,19 @@ identified in [this chapter](general-guidance/general-rules-for-data-correctness
 #### Example of FIXM Core usage NOT satisfying the requirement on data correctness
 
 ```xml
-<fx:aircraft>
-  <fx:aircraftType>
-    <fx:numberOfAircraft>2</fx:numberOfAircraft>
-    <fx:type>
-      <fx:icaoAircraftTypeDesignator>MIR2</fx:icaoAircraftTypeDesignator>
-    </fx:type>
-  </fx:aircraftType>
-  <fx:aircraftType>
-  <fx:numberOfAircraft>1</fx:numberOfAircraft>
-    <fx:type>
-      <fx:icaoAircraftTypeDesignator>RFAL</fx:icaoAircraftTypeDesignator>
-    </fx:type>
-  </fx:aircraftType>
-  <fx:formationCount>2</fx:formationCount>
-</fx:aircraft>
+<fx:position srsName="urn:ogc:def:crs:EPSG::4326">
+  <fb:pos>19.740115 NaN</fb:pos>
+</fx:position>
 ```
+This example shows the FIXM encoding of a latitude/longitude pair that fails to follow the rules for data correctness from [this chapter](general-guidance/general-rules-for-data-correctness). This example validates from a data structure point of view (that is, it validates against the FIXM Core XML schemas) but is not correct because “NaN” is not a valid number in a latitude/longitude pair.
 
-This example represents a description of a fictitious formation of
-military aircraft composed of two Mirages 2000 and one Rafale which
-altogether constitute a single (formation) flight. This example is valid
-from a data structure point of view (it validates against the FIXM Core
-XML schemas) but is not correct in so far as the sum of all
-`AircraftType.numberOfAircraft` properties does not match
-`Aircraft.formationCount`, which breaks a rule from [this chapter](general-guidance/general-rules-for-data-correctness). This
-example does not qualify as valid FIXM Core usage.
+## References
+
+### ICAO References
+
+[I-06]: [ICAO Doc 9965, 2nd Edition, Volume II, v0.993 (DRAFT)](https://portal.icao.int/atmrpp/ATMRPP5%20Montreal%2059%20June%202023/1_Working%20papers/ATMRPP5_WP1000_Appendix%20C%20Doc%209965%20Vol%20II%20Implementation%20Guidance%20d0.993_markup.pdf) - Manual on FF-ICE, FF-ICE/R1 Implementation Guidance Manual **DRAFT** 
+
+[I-16]: [ICAO Doc 10150, 1st Edition, 2021](https://portal.icao.int/icao-net/ICAO%20Documents/10150_cons_en.PDF) - Manual on the Functional Specifications for the Location of an Aircraft in Distress Repository (LADR)
+
+
+

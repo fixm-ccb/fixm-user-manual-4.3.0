@@ -1,4 +1,4 @@
-# Rules for absent data
+# Rules for Absent Data
 
 FIXM supports the representation of fields that are explicitly absent or
 that are deleted. It does so by leveraging the XSD specification for
@@ -29,15 +29,31 @@ the context of the information exchange:
 -   A nil element included in an FF-ICE Flight Plan Update message will
     indicate that this flight plan data item is to be deleted. This
     interpretation is dictated by the FF-ICE Implementation Guidance
-    Manual which states the following:
+    Manual <sup>[[I-06]](#references)</sup> which states the following:
 
-> *7.4.3.6 A Flight Plan Update is only required to contain those items
+> *6.4.3.6 A Flight Plan Update is only required to contain those items
 > that have changed (in addition to the mandatory items specified for an
 > Update message), i.e. it is not necessary to resend complete flight
 > data. Data items that were included in the previous version of the
 > flight plan and have not been included in the Flight Plan Update will
 > remain unchanged. This means that a mechanism is required to identify
-> when a flight plan data item is to be deleted.”*
+> when a flight plan data item is to be deleted.*
+
+<ul>This use of nil is only appropriate for non-repeating elements. As 
+     explained in the Implementation Guidance, repeating elements must 
+     be updated as a group rather than modifying or deleting individual
+     components:</ul>
+
+> *6.4.3.9 Individual elements within a repeating sequence of elements 
+> such as those found within a route/trajectory group or a climb/descent 
+> performance profile cannot be modified or deleted. The entire group 
+> must be updated as required.*
+
+<ul>Though not stated explicitly in the Implementation Guidance, this 
+     also applies to elements found under choice structures. That is,
+     elements under a choice structure do not need to be nilled out 
+     and replaced. When a choice structure is received as part of an 
+     update, it replaces the previous entry entirely.</ul>
 
 -   A nil element included in an FF-ICE Flight Data Response Message
     will indicate that the data item is explicitly declared as not
@@ -47,13 +63,7 @@ Future FIXM versions may support the exchange of an additional “nil
 reason” attribute, if the need for it is identified by the FIXM
 Community.
 
-*Note: the support for nillable elements has implied a significant
-design change in FIXM Core 4.2.0. The previous FIXM Core versions relied
-extensively on XSD attributes, which are not nillable. These XSD
-attributes were converted to XSD elements in FIXM Core 4.2.0 so that the
-built-in XSD attribute nillable could be leveraged.*
-
-## Declaring null Measures and Geographical Position
+## Declaring Null Measures and Geographical Position
 
 The FIXM Measures types enforce the provision of the “uom” attribute
 together with the numeric value of the measure. Likewise, the FIXM
@@ -97,10 +107,16 @@ When a geographical position is to be declared null:
 -   Information consumer side: Ignore the provided srsName provided
     together with the null position.
 
-### Example of valid null measure declaration with a fake uom to be ignored:
+### Example of Valid Null Measure Declaration with a Fake UOM to be Ignored:
 
 ```xml
 <fx:desired>
   <fx:takeoffMass xsi:nil="true" uom="KG"/>
 </fx:desired>
 ```
+
+## References
+
+### ICAO References
+
+[I-06]: [ICAO Doc 9965, 2nd Edition, Volume II, v0.993 (DRAFT)](https://portal.icao.int/atmrpp/ATMRPP5%20Montreal%2059%20June%202023/1_Working%20papers/ATMRPP5_WP1000_Appendix%20C%20Doc%209965%20Vol%20II%20Implementation%20Guidance%20d0.993_markup.pdf) - Manual on FF-ICE, FF-ICE/R1 Implementation Guidance Manual **DRAFT** 
