@@ -1,12 +1,12 @@
-# General rules for data correctness
+# General Rules for Data Correctness
 
 ?> The table below compiles an initial set of business rules 
 identified in the GENERAL GUIDANCE part, or already
 captured in the FIXM Core model as model element notes. This table will be 
-gradually enriched based on implementers’ feedback. Submit new rules using the [*Contact Us*](https://www.fixm.aero/content/contact.pl?category=Technical&version=Other&versionOther=FIXM%20User%20Manual&details=Describe%20proposed%20content%20here) form. 
+gradually enriched based on implementers’ feedback. Submit new rules using the [*Contact Us*](https://fixm.aero/contact.pl) form. 
 
 ?> The overall formulation and description method for
-the business rules below may be also revisisted, in particular in the light of the [AIXM experience with
+the business rules below may be also revisited, in particular in the light of the [AIXM experience with
 regards to business rules](http://aixm.aero/page/business-rules). 
 In particular, the use of Schematron, which is a validation language capable of handling business rules that an XML schema alone cannot
 provide, may be a candidate means to enforce the business rules below.
@@ -60,10 +60,6 @@ provide, may be a candidate means to enforce the business rules below.
 <tr class="even">
 <td>TimeRange</td>
 <td>The earliest time shall always be before the latest time.</td>
-</tr>
-<tr class="odd">
-<td>Aircraft</td>
-<td>The property formationCount, if provided, shall be equal to or greater than 2.</td>
 </tr>
 <tr class="odd">
 <td>OnlineContact</td>

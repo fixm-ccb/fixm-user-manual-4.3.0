@@ -1,4 +1,4 @@
-# Geographical positions
+# Geographical Positions
 
 FIXM captures the concept of Geographical Position as defined by ICAO
 Annex 15.
@@ -10,15 +10,15 @@ position of a point on the surface of the Earth.*
 This model element maps to the ISO 19107 “Point” construct, defined as a
 single location given by a direct position.
 
-## FIXM representation
+## FIXM Representation
 
 ### Logical Model
 
-![Image](.//media/general-guidance-geographical-positions-01.png ':size=50%')
+![Image](.//media/general-guidance-geographical-positions-01.png ':size=35%')
 
 UML Class `GeographicalPosition` in package `FIXM.Base.AeronauticalReference`
 
-### XML schemas
+### XML Schemas
 
 ```xml
 <xs:complexType name="GeographicalPositionType">
@@ -38,7 +38,7 @@ UML Class `GeographicalPosition` in package `FIXM.Base.AeronauticalReference`
 A geographic location consists of a co-ordinate reference system and
 geographic co-ordinates.
 
-## Co-ordinate reference system
+## Co-Ordinate Reference System
 
 ICAO Annex 11 chapter 2.29.1 states that World Geodetic System — 1984
 (WGS-84) shall be used as the horizontal (geodetic) reference system for
@@ -51,14 +51,14 @@ coordinate axes in which coordinate values are provided, e.g. latitude
 before longitude – which is an important convention for the aviation
 domain.*
 >
-> -- <cite>OGC 12-028r1 <sup>[[14]](#references)</sup></cite>
+> -- <cite>OGC 12-028r1 <sup>[[O-03]](#references)</sup></cite>
 
 The EPSG:4326 CRS is the recommended choice for AIXM 5.1 data sets that
 use the WGS-84 reference datum.
 
 FIXM implements a fixed co-ordinate reference system: `urn:ogc:def:crs:EPSG::4326`.
 
-## Geographic co-ordinates
+## Geographic Co-Ordinates
 
 The EPSG:4326 CRS has latitude as the primary axis, which indicates that
 **the order of the values in the fb:pos element is** **first latitude**,
@@ -129,12 +129,12 @@ geospatial data. The reasons for not adopting GML are the following:
     technologies have been identified as *incompatible* with the GML
     usage.
 
-[AeronauticalReference.xsd]: https://www.fixm.aero/releases/FIXM-4.2.0/schemas/core/base/AeronauticalReference.xsd
-[GeographicalPositionType]: https://www.fixm.aero/releases/FIXM-4.2.0/doc/schema_documentation/Fixm_GeographicalPositionType.html
+[AeronauticalReference.xsd]: https://www.fixm.aero/releases/FIXM-4.3.0/schemas/core/base/AeronauticalReference.xsd
+[GeographicalPositionType]: https://www.fixm.aero/releases/FIXM-4.3.0/doc/schema_documentation/Fixm_GeographicalPositionType.html
 
 ## Notes
 [1]: FIXM does not use GML but mimics it for geographic positions. GML encodes geographic locations as sequences of values since it employs the same construct to represent polygons.
 
 ## References
 
-[14]: [OGC 12-028r1](https://portal.opengeospatial.org/files/?artifact_id=62061): Use of Geography Markup Language (GML) for Aviation Data
+[O-03]: [OGC 12-028r1](https://portal.opengeospatial.org/files/?artifact_id=62061) - Use of Geography Markup Language (GML) for Aviation Data

@@ -1,3 +1,5 @@
+!> **Note to implementers:** This "How To" section was originally developed using FIXM Core v4.2.0 and uses that version as the foundation for the modeling guidance provided. The details presented here should be equally applicable for FIXM Core v4.3.0 as no fundamental shifts in modeling best practices exist between these two versions.
+
 # Create Application Content
 
 Now it is time to create any content needed for your Application. For
@@ -294,7 +296,7 @@ For this example, we will create a single such entry point named
     opens the Select Classifier dialogue box. In the *Browse* tab,
     navigate to and click on the class you would like to use as the
     entry point for your Application. In this example, Fixm -&gt;
-    Applications -&gt; ExampleMessage -&gt; MessageType. Click OK.
+    Applications -&gt; ExampleMessage -&gt; ExampleMessage. Click OK.
 
       ![Image](.//media/image96.png)
 
@@ -323,4 +325,4 @@ metadata needed for your particular exchange.
 
 [1]: If your toolbox is not showing XML Schema options, make sure you’ve applied the XSDschema stereotype to your package and close and then reopen the diagram.
 
-[2]: Note that position tags may need to be updated appropriately any time you add, remove, or rename an attribute or association.  Be sure to check your position tags anytime you edit your model.
+[2]: Note that position tags may need to be updated appropriately any time you add, remove, or rename an attribute or association.  Be sure to check your position tags any time you edit your model.
