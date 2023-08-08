@@ -230,7 +230,6 @@ The picture below provides an illustration of the catalogue of third-parties FIX
 *Note: as the catalogue of FIXM Applications and FIXM Extensions expands, the FIXM CCB may establish a formal verification process whereby the content of third-party components proposed for the catalogue would be more systematically analysed. This process would primarily aim to ensure appropriate awareness of the FIXM CCB about the detailed scope and content of the Applications and Extensions listed in the catalogue, to help identify commonalities and potential synergies, and to identify flight data elements that could become candidate for promotion to FIXM Core*
 
 
-
 ## References
 
 ### FIXM References
