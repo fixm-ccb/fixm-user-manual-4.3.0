@@ -291,6 +291,7 @@ RouteTrajectoryGroup --> PerformanceProfile : +descentProfile [0..1]
 ![Image](.//media/example_descent_profile.png ':size=100%')
 
 ```xml
+<!--xmlns:fx="http://www.fixm.aero/flight/4.3"-->
 <fx:descentProfile>			
     <fx:profilePoint seqNum="0">		
         <fx:distance uom="M">236300.0</fx:distance>	
