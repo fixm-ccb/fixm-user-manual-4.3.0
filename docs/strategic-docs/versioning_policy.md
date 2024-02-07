@@ -38,7 +38,7 @@ Model with no impact on the physical realization(s).
 - Correcting spelling mistakes, incl. in physical realisations 
 - Updating external references
 
-## APLHA, BETA and RELEASE CANDIDATES
+## ALPHA, BETA and RELEASE CANDIDATES
 
 Alpha, Beta or Release Candidate versions, if created, will be named as follows: 
 - X.Y.Z_ALPHA 
