@@ -82,10 +82,14 @@ Edited [DepartureType][DepartureType] in file [Departure.xsd][Departure.xsd]
 
 ```xml
 <fx:departure>
-    <fx:departureAerodrome>DFW</fx:departureAerodrome>
-    <fx:departureAerodromePrevious>DAL</fx:departureAerodromePrevious>
+    <fx:departureAerodrome>
+        <fb:locationIndicator>KDFW</fb:locationIndicator>
+    </fx:departureAerodrome>
+    <fx:departureAerodromePrevious>
+        <fb:locationIndicator>KDAL</fb:locationIndicator>
+    </fx:departureAerodromePrevious>
     <fx:estimatedOffBlockTime>2023-01-13T15:18:00Z</fx:estimatedOffBlockTime>
-    <fx:estimatedOffBlockTime>2023-01-13T20:05:00Z</fx:estimatedOffBlockTime>
+    <fx:estimatedOffBlockTimePrevious>2023-01-13T20:05:00Z</fx:estimatedOffBlockTimePrevious>
 </fx:departure>
 ```
 ### Non-Aerodrome Departure Example
@@ -93,41 +97,42 @@ Edited [DepartureType][DepartureType] in file [Departure.xsd][Departure.xsd]
 ```xml
 <fx:departure>
     <fx:departurePoint>
-        <fb:position srsName="urn:ogc:def:crs:EPSG::4326">
+        <fx:position srsName="urn:ogc:def:crs:EPSG::4326">
             <fb:pos>59.0 -30.0</fb:pos>
-        </fb:position>
+        </fx:position>
     </fx:departurePoint>
     <fx:departurePointPrevious>
-        <fb:position srsName="urn:ogc:def:crs:EPSG::4326">
+        <fx:position srsName="urn:ogc:def:crs:EPSG::4326">
             <fb:pos>59.1 -30.2</fb:pos>
-        </fb:position>
+        </fx:position>
     </fx:departurePointPrevious>
-    <fx:estimatedRouteStartTimeTime>2023-01-13T15:18:00Z</fx:estimatedRouteStartTimeTime>
-    <fx:estimatedRouteStartTimeTime>2023-01-13T20:05:00Z</fx:estimatedRouteStartTimeTime>
+    <fx:estimatedRouteStartTime>2023-01-13T15:18:00Z</fx:estimatedRouteStartTime>
+    <fx:estimatedRouteStartTimePrevious>2023-01-13T20:05:00Z</fx:estimatedRouteStartTimePrevious>
 </fx:departure>
 ```
 ### AirFile Example
 
 ```xml
 <fx:departure>
+    <fx:airfileIndicator>AIRFILE</fx:airfileIndicator>
     <fx:departurePoint>
-        <fb:navaid>
-              <fb:designator>FAM<fb:designator>
+        <fx:navaid>
+              <fb:designator>FAM</fb:designator>
               <fb:position srsName="urn:ogc:def:crs:EPSG::4326">
                   <fb:pos>37.6734614 -90.2340597</fb:pos>
               </fb:position>
-        </fb:navaid>
+        </fx:navaid>
     </fx:departurePoint>
     <fx:departurePointPrevious>
-         <fb:designatedPoint>
-              <fb:designator>PLESS<fb:designator>
+         <fx:designatedPoint>
+              <fb:designator>PLESS</fb:designator>
               <fb:position srsName="urn:ogc:def:crs:EPSG::4326">
                   <fb:pos>37.80957778 -88.96318889</fb:pos>
               </fb:position>
+         </fx:designatedPoint>
     </fx:departurePointPrevious>
     <fx:estimatedRouteStartTime>2023-01-13T15:18:00Z</fx:estimatedRouteStartTime>
-    <fx:estimatedRouteStartTime>2023-01-13T20:05:00Z</fx:estimatedRouteStartTime>
-    <fx:airfileIndicator>AIRFILE</fx:airfileIndicator>
+    <fx:estimatedRouteStartTimePrevious>2023-01-13T20:05:00Z</fx:estimatedRouteStartTimePrevious>
 </fx:departure>
 ```
 
