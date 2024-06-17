@@ -232,6 +232,13 @@ based on which type of FF-ICE message is being translated.
 <p>supplementaryInformation.supplementaryInformationSource.unit.atcUnitNameOrAlternate</p></td>
 </tr>
 <tr class="odd">
+<td></td>
+<td>Flight.Departure</td>
+<td>DeparturePointChoice</td>
+<td><p>If the aircraft has not taken off from an aerodrome.</p>
+<p>departure.departurePoint</p>
+</tr>
+<tr class="even">
 <td>DEST</td>
 <td>Base.AeronauticalReference</td>
 <td>AerodromeReference</td>
@@ -239,7 +246,7 @@ based on which type of FF-ICE message is being translated.
 <p>arrival.destinationAerodrome.name</p>
 <p>arrival.destinationAerodrome.referencePoint<br>or<br>arrival.destinationAerodrome.referenceRelativePoint</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>DOF</td>
 <td>Base.Types</td>
 <td>DateTimeUtc</td>
@@ -249,35 +256,35 @@ based on which type of FF-ICE message is being translated.
 <p>departure.estimatedRouteStartTime</p>
 <p>Note: DOF is not modelled as a distinct attribute in FIXM, it is a component of the FIXM date/time fields</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>REG</td>
 <td>Flight.Aircraft</td>
 <td>AircraftRegistration</td>
 <td><p>aircraft.registration</p>
 <p>If there is more than one FIXM registration, insert the first only in field 18 REG.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>EET</td>
 <td>Base.AeronauticalReference</td>
 <td>LocationIndicator</td>
 <td><p>[EstimatedElapsedTime airspace boundary specified]</p>
 <p>routeTrajectoryGroup.〈kind〉.routeInformation.estimatedElapsedTime.location.region</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td>Base.AeronauticalReference</td>
 <td>SignificantPointChoice</td>
 <td><p>[EstimatedElapsedTime significant point specified]</p>
 <p>routeTrajectoryGroup.〈kind〉.routeInformation.estimatedElapsedTime.location.point</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Base.AeronauticalReference</td>
 <td>Longitude</td>
 <td><p>[EstimatedElapsedTime longitude specified]</p>
 <p>routeTrajectoryGroup.〈kind〉.routeInformation.estimatedElapsedTime.location.longitude</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td>Base.AeronauticalReference</td>
 <td>SignificantPointType</td>
@@ -286,39 +293,48 @@ based on which type of FF-ICE message is being translated.
 <p>routeTrajectoryGroup.〈kind〉.element.elementStartPoint</p>
 <p>routeTrajectoryGroup.〈kind〉.element.point4D.position</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Base.Types</td>
 <td>Duration</td>
 <td><p>[EstimatedElapsedTime duration specified]</p>
 <p>routeTrajectoryGroup.〈kind〉.routeInformation.estimatedElapsedTime.elapsedTime</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td>Base.Types</td>
 <td>Duration</td>
 <td><p>[4DT point specified]</p>
 <p>routeTrajectoryGroup.〈kind〉.element.point4D.time.relativeTimeFromInitialPredictionPoint</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>SEL</td>
 <td>Flight.Capability</td>
 <td>SelectiveCallingCode</td>
 <td>aircraft.capabilities.communication.selectiveCallingCode</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>TYP</td>
 <td>Base.Types</td>
 <td>CountPositive</td>
 <td><p>[9b=ZZZZ]</p>
 <p>aircraft.aircraftType.aircraftCount</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td>Base.Types</td>
 <td>CharacterString</td>
 <td><p>[9b=ZZZZ]</p>
+<p>If the aircraft doesn't have an ICAO designator</p>
 <p>aircraft.aircraftType.otherAircraftType</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Base.Types</td>
+<td>AircraftTypeDesignator</td>
+<td><p>[9b=ZZZZ]</p>
+<p>If the aircraft has an ICAO designator (formation flights)</p>
+<p>aircraft.aircraftType.icaoAircraftTypeDesignator</p></td>
 </tr>
 <tr class="odd">
 <td>CODE</td>
