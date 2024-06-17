@@ -235,7 +235,7 @@ based on which type of FF-ICE message is being translated.
 <td></td>
 <td>Flight.Departure</td>
 <td>DeparturePointChoice</td>
-<td><p>If the aircraft has not taken off from an aerodrome.</p>
+<td><p>If the aircraft has not taken off from an aerodrome</p>
 <p>departure.departurePoint</p>
 </tr>
 <tr class="even">
