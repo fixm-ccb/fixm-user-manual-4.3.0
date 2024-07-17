@@ -27,7 +27,7 @@ following:
 
     <fb:locationIndicator>EBBR</fb:locationIndicator>
 
-</fx:aerodrome>
+</fx:departureAerodrome>
 ```
 
 This example displays an aerodrome reference involving a four-letter
@@ -41,7 +41,7 @@ aerodrome references defined by the FIXM Core XML schemas.
 
     <fb:locationIndicator>BRU</fb:locationIndicator>
 
-</fx:aerodrome>
+</fx:departureAerodrome>
 ```
 
 This example displays an aerodrome reference based on property
@@ -111,14 +111,14 @@ the FIXM Core requirement on data structure.
 #### Example of FIXM Core usage satisfying the requirement on data correctness
 
 ```xml
-<fx:range>
+<fb:range>
   <fb:lowerBound>
     <fb:flightLevel uom="FL">240</fb:flightLevel>
   </fb:lowerBound>
   <fb:upperBound>
     <fb:flightLevel uom="FL">250</fb:flightLevel>
   </fb:upperBound>
-</fx:range>
+</fb:range>
 ```
 
 This example shows the FIXM encoding of vertical range \[FL240;FL250\].
