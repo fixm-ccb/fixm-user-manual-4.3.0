@@ -56,7 +56,7 @@ Atlantic Ocean. **The examples shall never be used as operational data**.
     <fb:bearing uom="DEG" zeroBearingType="MAGNETIC_NORTH">82.0</fb:bearing>
     <fb:distance uom="NM">2.0</fb:distance>
     <fb:referencePoint>
-        <fb:designator>BOR</fb:designator>         (*)
+        <fb:designator>BOR</fb:designator>         <!--(*)-->
     </fb:referencePoint>
 </fb:relativePoint>
 ```
@@ -73,7 +73,7 @@ Atlantic Ocean. **The examples shall never be used as operational data**.
         <fb:pos>51.36833333333333 -32.375</fb:pos>
     </fb:position>
     <fb:referencePoint>
-        <fb:designator>BOR</fb:designator>         (*)
+        <fb:designator>BOR</fb:designator>         <!--(*)-->
     </fb:referencePoint>
 </fb:relativePoint>
 ```
