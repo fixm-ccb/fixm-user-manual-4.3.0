@@ -96,7 +96,6 @@ values have different constraints.
 ```xml
 <fx:point4D srsName="urn:ogc:def:crs:EPSG::4326">
     <fb:pos>50.03330555555556 8.570455555555556</fb:pos>
-<!– [...] –>
 ```
 
 On EXAMPLE 1 above, number `59.0` represents the latitude and number
