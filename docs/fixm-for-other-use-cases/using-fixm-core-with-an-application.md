@@ -75,9 +75,9 @@ update may look like.
     <msg:timestamp>2020-01-01T00:03:01Z</msg:timestamp>
     <msg:type>DEPARTURE</msg:type>
   </msg:message>
-  .
-  .
-  .
+  <!-- . -->
+  <!-- . -->
+  <!-- . -->
   <msg:message>
     <msg:flight>
       <fx:arrival>

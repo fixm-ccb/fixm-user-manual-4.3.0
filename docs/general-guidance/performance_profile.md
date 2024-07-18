@@ -65,8 +65,8 @@ RouteTrajectoryGroup --> PerformanceProfile : +descentProfile [0..1]
             <fb:altitude uom="M">914.0</fb:altitude>
         </fx:level>
         <fx:time>P0DT0H1M59S</fx:time>
-    </fx:profilePoint seqNum="3">
-    <fx:profilePoint>
+    </fx:profilePoint>
+    <fx:profilePoint seqNum="3">
         <fx:distance uom="M">11726.0</fx:distance>
         <fx:level>
             <fb:altitude uom="M">1219.0</fb:altitude>

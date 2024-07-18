@@ -15,7 +15,7 @@ should be reset to reflect this, not maintained so that a gap is formed.
 ## Example
 
 ```xml
-<fx:filed>
+<fx:desired>
   <fx:element seqNum="0">
     <!-- […] -->
   </fx:element>
@@ -23,5 +23,5 @@ should be reset to reflect this, not maintained so that a gap is formed.
     <!-- […] -->
   </fx:element>
   <!-- […] -->
-</fx:filed>
+</fx:desired>
 ```
