@@ -1153,8 +1153,7 @@ as described in chapter [Generic hypertext references](#generic-hypertext-refere
 ```
 
 </p></td>
-<td><p>&lt;fx:originator&gt;</p>
-<p>
+<td><p>
 
 ```xml
 <fx:originator>
