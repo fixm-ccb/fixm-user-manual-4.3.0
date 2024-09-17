@@ -1044,14 +1044,14 @@ Examples (NOT for OPERATIONAL USE)
 <td><p>
 
 ```xml
-<fx:region>KZLC</fx:region>
+<fx:controlSectorDesignator>KZLC</fx:controlSectorDesignator>
 ```
 
 </p></td>
 <td><p>
 
 ```xml
-<fx:region>AMSWELL</fx:region> 
+<fx:controlSectorDesignator>AMSWELL</fx:controlSectorDesignator> 
 ```
 
 </p></td>
@@ -1063,14 +1063,14 @@ Examples (NOT for OPERATIONAL USE)
 <td>
 
 ```xml
-<fx:region href="urn:uuid:...">KZLC</fx:region>
+<fx:controlSectorDesignator href="urn:uuid:...">KZLC</fx:controlSectorDesignator>
 ```
 
 </td>
 <td><p>
 
 ```xml
-<fx:region href="urn:uuid:...">AMSWELL</fx:region>
+<fx:controlSectorDesignator href="urn:uuid:...">AMSWELL</fx:controlSectorDesignator>
 ```
 
 </p>
