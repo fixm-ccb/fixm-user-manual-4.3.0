@@ -2,8 +2,7 @@
 
 # Sample XML
 
-Below is a sample XML document that validates against the Example
-Extension described in this section:
+Below is a sample XML document that validates against the ExampleMessage Application described in this section:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
