@@ -1,4 +1,6 @@
-# Non-Aerodrome Departures
+# Non-Aerodrome Departures - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 There are three use cases associated with departure points that can be represented in FIXM:
  
