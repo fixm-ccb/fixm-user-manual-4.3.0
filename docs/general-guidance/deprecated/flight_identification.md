@@ -1,4 +1,6 @@
-# Flight Identification
+# Flight Identification - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 ## GUFI
 
