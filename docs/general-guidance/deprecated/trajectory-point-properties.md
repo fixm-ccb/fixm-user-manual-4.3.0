@@ -1,4 +1,6 @@
-# Trajectory Point Properties
+# Trajectory Point Properties - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 Each Trajectory Point in a FIXM four-dimensional trajectory can indicate, via use of Trajectory Point Properties, the events of interest that occur at that particular point. The following table is intended to help clarify what each Trajectory Point Property is for and when each of the property types should be used.
 
