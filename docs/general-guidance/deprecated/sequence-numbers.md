@@ -1,4 +1,6 @@
-# Sequence Numbers
+# Sequence Numbers - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 The FIXM Logical Model specifies several ordered repeating sequences.
 The FIXM XML schemas add an optional sequence number attribute to the
