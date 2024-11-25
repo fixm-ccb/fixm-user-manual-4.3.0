@@ -1,4 +1,6 @@
-# Contact Information
+# Contact Information - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 ![Image](.//media/image24.png")
 
