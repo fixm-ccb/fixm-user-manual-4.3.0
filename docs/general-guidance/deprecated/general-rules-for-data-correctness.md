@@ -1,4 +1,6 @@
-# General Rules for Data Correctness
+# General Rules for Data Correctness - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 ?> The table below compiles an initial set of business rules 
 identified in the GENERAL GUIDANCE part, or already
