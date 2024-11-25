@@ -4,7 +4,6 @@
   - [Versioning Policy](strategic-docs/versioning_policy.md)
 
 
-
 - **FIXM Components**
   - [Introduction](general-guidance/fixm-components-introduction.md)
   - [FIXM Core](general-guidance/fixm-core.md)
@@ -12,52 +11,31 @@
   - [Extensions](general-guidance/extensions.md)
 
 
-
-- **FIXM Data Samples**
-  - [Overview](fixm-data-samples/overview.md)
-
-
-
-- **FIXM Encoding Guidance<br>(FLIGHT package)**
-  - [Overview](general-guidance/fx_overview.md)
-  - [fx:Aircraft](general-guidance/fx_Aircraft.md)
-  - [fx:Arrival](general-guidance/fx_Arrival.md)
-  - [fx:Capability](general-guidance/fx_Capability.md)
-  - [fx:Cargo](general-guidance/fx_Cargo.md)
-  - [fx:Departure](general-guidance/fx_Departure.md)
-  - [fx:Emergency](general-guidance/fx_Emergency.md)
-  - [fx:EnRoute](general-guidance/fx_EnRoute.md)
-  - [fx:FlightData](general-guidance/fx_FlightData.md)
-  - [fx:RouteChanges](general-guidance/fx_RouteChanges.md)
-  - [fx:RouteTrajectory](general-guidance/fx_RouteTrajectory.md)
-  - [fx:Constraints](general-guidance/fx_Constraints.md)
-
-
-
-- **FIXM Encoding Guidance<br>(BASE package)**
-  - [Overview](general-guidance/fb_overview.md)
-  - [fb:Address](general-guidance/fb_Address.md)
-  - [fb:AeronauticalReference](general-guidance/fb_AeronauticalReference.md)
-  - [fb:Measures](general-guidance/fb_Measures.md)
-  - [fb:Organization](general-guidance/fb_Organization.md)
-  - [fb:RangesAndChoices](general-guidance/fb_RangesAndChoice.md)
-  - [fb:Types](general-guidance/fb_Types.md)
-
-
-
-- **FIXM Encoding Guidance<br>(Miscellaneous)**
+- **General Guidance**
+  - [Introduction](general-guidance/introduction.md)
+  - [Date/Time Specification & AIRAC Effective Date](general-guidance/date-time-specification.md)
+  - [Geographical Positions](general-guidance/geographical-positions.md)
+  - [References to Published Aeronautical Information](general-guidance/references-to-published-aeronautical-information.md)
+  - [Non-Aerodrome Departures](general-guidance/non-aerodrome-departures.md)
+  - [Relative Points](general-guidance/relative-points.md)
+  - [Vertical Distances](general-guidance/vertical-distances.md)
+  - [Sequence Numbers](general-guidance/sequence-numbers.md)
+  - [Contact Information](general-guidance/contact-information.md)
+  - [Aircraft Data](general-guidance/aircraft_data.md)
+  - [Flight Identification](general-guidance/flight_identification.md)
+  - [Flight Capabilities](general-guidance/flight_capabilities.md)
+  - [Constraints](general-guidance/constraints.md)
+  - [Trajectory Point Properties](general-guidance/trajectory-point-properties.md)
+  - [Airport Slot Identification](general-guidance/airport_slot.md)
+  - [General Rules for Data Correctness](general-guidance/general-rules-for-data-correctness.md)
   - [Rules for Absent Data](general-guidance/rules-for-absent-data.md)
-  - [Applying Templates in XML](general-guidance/applying_templates.md)
-  - [Use of other -XMs](general-guidance/the-use-of-other-exchange-models.md)
-
+  - [The Use of Other Exchange Models](general-guidance/the-use-of-other-exchange-models.md)
 
 
 - **Using FIXM in Support of FF-ICE**
   - [The FF-ICE Application for FIXM](fixm-in-support-of-ffice/ffice-application-for-fixm.md)
   - [FF-ICE Message Templates](fixm-in-support-of-ffice/message-templates.md)
   - [Route/Trajectory Example Data](fixm-in-support-of-ffice/example_data.md)
-  - [Examples of FF-ICE Messages](fixm-in-support-of-ffice/example_messages.md)
-
 
 
 - **Using FIXM for Other Use Cases**
@@ -66,11 +44,9 @@
   - [Using FIXM Core with an Extension](fixm-for-other-use-cases/using-fixm-core-with-an-extension.md)
 
 
-
 - **FIXM/ATS Mapping**
   - [Translating FF-ICE FIXM Messages to ATS Messages](ats-message-to-fixm-mapping/translating-ffice-fixm-messages-to-ats-messages.md)
   - [Mapping of ATS Fields to FIXM](ats-message-to-fixm-mapping/mapping-of-ats-fields-to-fixm.md)
-
 
 
 - **How to Create a FIXM Application**
@@ -84,7 +60,6 @@
   - [Sample XML](how-to-create-application/sample-xml.md)
 
 
-
 - **How to Create a FIXM Extension**
   - [Introduction](how-to-create-fixm-extension/introduction.md) 
   - [Initial Download and Setup](how-to-create-fixm-extension/initial-download-and-setup.md)
@@ -96,12 +71,10 @@
   - [Sample XML](how-to-create-fixm-extension/sample-xml.md)
 
 
-
 - **How to Generate XML Schemas from a FIXM Model using Sparx Enterprise Architect**
   - [Introduction](how-to-generate-xml-schemas/introduction.md) 
   - [Generating Schemas from the Logical Model](how-to-generate-xml-schemas/generating-schemas-from-the-logical-model.md)
   - [Post-processing the FIXM Schemas](how-to-generate-xml-schemas/post-processing-the-fixm-schemas.md)
-
 
 
 - **FIXM Development Tool Compatibility**
@@ -110,8 +83,6 @@
   - [Detailed Results](fixm-development-tool-compatibility/detailed-results.md)
 
 
-
 - **License**
-  - [Copyright 2024](https://fixm.aero/disclaimer.html)
-  - Last updated on <br> *04-Dec-2024*
-
+  - [Copyright 2023](https://fixm.aero/disclaimer.html)
+  - Last updated on August 4th 2023
