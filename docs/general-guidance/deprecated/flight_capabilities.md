@@ -1,4 +1,6 @@
-# Flight Capabilities
+# Flight Capabilities - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 ## Communication Capabilities
 
