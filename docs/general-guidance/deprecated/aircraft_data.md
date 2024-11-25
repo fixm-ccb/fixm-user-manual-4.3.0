@@ -1,4 +1,6 @@
-# Aircraft Data
+# Aircraft Data - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 ## Aircraft Registration
 
