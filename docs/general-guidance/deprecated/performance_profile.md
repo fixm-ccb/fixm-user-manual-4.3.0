@@ -1,4 +1,6 @@
-# Performance Profile
+# Performance Profile - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 As explained in the FF-ICE/R1 Implementation Guidance Manual <sup>[[I-06]](#references)</sup>,
 the `Performance Profile` is a zero-wind, standard atmosphere profile reflective of the flight capabilities and desired parameters. 
