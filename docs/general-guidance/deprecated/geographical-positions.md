@@ -1,4 +1,6 @@
-# Geographical Positions
+# Geographical Positions - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 FIXM captures the concept of Geographical Position as defined by ICAO
 Annex 15.
