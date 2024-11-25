@@ -1,4 +1,6 @@
-# Date/Time Specification & AIRAC Effective Date
+# Date/Time Specification & AIRAC Effective Date - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 FIXM requires times to be expressed in UTC. A constraint is therefore placed on the FIXM classes used to represent date/time values that imposes the use of the trailing character `Z` to indicate UTC, in line with the W3C XSD specification.
 
