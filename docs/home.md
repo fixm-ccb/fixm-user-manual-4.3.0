@@ -26,7 +26,8 @@ end
 
 subgraph Technical Guidance
 FIXM_COMPONENTS[FIXM<br>Components]
-GENERAL_GUIDANCE[General<br>Guidance]
+FIXM_DATA_SAMPLES[Data<br>Samples]
+FIXM_ENCODING_GUIDANCE[Encoding<br>Guidance]
 FIXM_FOR_FFICE[Using FIXM<br>for FF-ICE]
 FIXM_FOR_OTHER_USE[Using FIXM<br>for other use cases]
 HOW_TO[How to...<br>sections]
@@ -39,7 +40,8 @@ FIXM -.  details method<br>for versioning .- VERSIONING
 
 
 FIXM_COMPONENTS-. provides explanations<br>about the components of .- FIXM
-GENERAL_GUIDANCE-. describes general<br>encoding rules for .- FIXM
+FIXM_DATA_SAMPLES-. provides XML samples<br>valid against .- FIXM
+FIXM_ENCODING_GUIDANCE-. describes general<br>encoding rules for .- FIXM
 FIXM_FOR_FFICE-. provides guidance<br>in support of<br>FF-ICE implementation<br>using .- FIXM
 FIXM_FOR_OTHER_USE-. provides guidance<br>for non-ICAO use cases<br>using.- FIXM
 HOW_TO-. provides guidance for<br>creating 3rd party's<br>Applications/Extensions of .- FIXM
@@ -47,16 +49,17 @@ FIXM_DEV_TOOLS_COMPATIBILITY-. reports about software<br>compatibility of.- FIXM
 
 style FIXM stroke-width:3px
 
-click STRATEGY "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/strategic-docs/strategy" "Browse the FIXM Strategy"
-click CHARTER "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/strategic-docs/charter" "Browse the FIXM Change Management Charter"
-click VERSIONING "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/strategic-docs/versioning_policy" "Browse the FIXM Versioning Policy"
+click STRATEGY "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/strategic-docs/strategy" "Browse the FIXM Strategy"
+click CHARTER "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/strategic-docs/charter" "Browse the FIXM Change Management Charter"
+click VERSIONING "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/strategic-docs/versioning_policy" "Browse the FIXM Versioning Policy"
 
-click FIXM_COMPONENTS "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/general-guidance/fixm-components-introduction" "Explanations about the main FIXM components"
-click GENERAL_GUIDANCE "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/general-guidance/introduction" "The general rules always  applicable to FIXM"
-click FIXM_FOR_FFICE "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/fixm-in-support-of-ffice/ffice-application-for-fixm" "Guidance about the use of FIXM for FF-ICE"
-click FIXM_FOR_OTHER_USE "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/fixm-for-other-use-cases/using-fixm-core-without-an-application" "Guidance about the usage of FIXM in other contexts"
-click HOW_TO "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/how-to-create-application/introduction" "The How to section for FIXM"
-click FIXM_DEV_TOOLS_COMPATIBILITY "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/fixm-development-tool-compatibility/introduction" "Information about the compatibility of FIXM with mainstream development tools"
+click FIXM_COMPONENTS "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/general-guidance/introduction?id=fixm-encoding-guidance" "Explanations about the main FIXM components"
+click FIXM_DATA_SAMPLES "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/fixm-data-samples/overview" "FIXM data samples"
+click FIXM_ENCODING_GUIDANCE "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/general-guidance/fx_overview" "The general rules always applicable to FIXM"
+click FIXM_FOR_FFICE "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/fixm-in-support-of-ffice/ffice-application-for-fixm" "Guidance about the use of FIXM for FF-ICE"
+click FIXM_FOR_OTHER_USE "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/fixm-for-other-use-cases/using-fixm-core-without-an-application" "Guidance about the usage of FIXM in other contexts"
+click HOW_TO "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/how-to-create-application/introduction" "The How to section for FIXM"
+click FIXM_DEV_TOOLS_COMPATIBILITY "https://fixm-ccb.github.io/fixm-user-manual-4.3.0-testing/#/fixm-development-tool-compatibility/introduction" "Information about the compatibility of FIXM with mainstream development tools"
 ```
 
 Note: The content of the FIXM User Manual is informative. The use of the words *shall* or *required* indicates a requirement to be strictly followed in order to conform to this guidance. The use of the words *should* or *recommended* indicates that there may may be valid reasons, in particular circumstances, to ignore a particular aspect of the guidance.
@@ -64,9 +67,9 @@ Note: The content of the FIXM User Manual is informative. The use of the words *
 
 | Your FIXM use case | Chapters relevant to you |
 |:-|:---|
-| I want to use FIXM to implement ICAO FF-ICE Service(s) without local/regional arrangements | [FIXM COMPONENTS](general-guidance/fixm-components-introduction), [GENERAL GUIDANCE](general-guidance/introduction), [FIXM DEVELOPMENT TOOL COMPATIBILITY](fixm-development-tool-compatibility/introduction), [USING FIXM IN SUPPORT OF FF-ICE](fixm-in-support-of-ffice/ffice-application-for-fixm) |
-| I want to use FIXM to implement ICAO FF-ICE Service(s) with local/regional arrangements | [FIXM COMPONENTS](general-guidance/fixm-components-introduction), [GENERAL GUIDANCE](general-guidance/introduction), [FIXM DEVELOPMENT TOOL COMPATIBILITY](fixm-development-tool-compatibility/introduction), [USING FIXM IN SUPPORT OF FF-ICE](fixm-in-support-of-ffice/ffice-application-for-fixm), [HOW TO CREATE A FIXM APPLICATION](how-to-create-application/introduction), [HOW TO CREATE A FIXM EXTENSION](how-to-create-fixm-extension/introduction), [HOW TO GENERATE XML SCHEMAS ...](how-to-generate-xml-schemas/introduction)|
-| I want to use FIXM to exchange flight data based on my own organisation's needs | [FIXM COMPONENTS](general-guidance/fixm-components-introduction), [GENERAL GUIDANCE](general-guidance/introduction), [FIXM DEVELOPMENT TOOL COMPATIBILITY](fixm-development-tool-compatibility/introduction), [USING FIXM FOR OTHER USE CASES](fixm-for-other-use-cases/using-fixm-core-without-an-application), [HOW TO CREATE A FIXM APPLICATION](how-to-create-application/introduction), [HOW TO CREATE A FIXM EXTENSION](how-to-create-fixm-extension/introduction), [HOW TO GENERATE XML SCHEMAS ...](how-to-generate-xml-schemas/introduction) |
+| I want to use FIXM to implement ICAO FF-ICE Service(s) without local/regional arrangements | [FIXM COMPONENTS](general-guidance/fixm-components-introduction), [GENERAL GUIDANCE](general-guidance/fx_overview), [FIXM DEVELOPMENT TOOL COMPATIBILITY](fixm-development-tool-compatibility/introduction), [USING FIXM IN SUPPORT OF FF-ICE](fixm-in-support-of-ffice/ffice-application-for-fixm) |
+| I want to use FIXM to implement ICAO FF-ICE Service(s) with local/regional arrangements | [FIXM COMPONENTS](general-guidance/fixm-components-introduction), [GENERAL GUIDANCE](general-guidance/fx_overview), [FIXM DEVELOPMENT TOOL COMPATIBILITY](fixm-development-tool-compatibility/introduction), [USING FIXM IN SUPPORT OF FF-ICE](fixm-in-support-of-ffice/ffice-application-for-fixm), [HOW TO CREATE A FIXM APPLICATION](how-to-create-application/introduction), [HOW TO CREATE A FIXM EXTENSION](how-to-create-fixm-extension/introduction), [HOW TO GENERATE XML SCHEMAS ...](how-to-generate-xml-schemas/introduction)|
+| I want to use FIXM to exchange flight data based on my own organisation's needs | [FIXM COMPONENTS](general-guidance/fixm-components-introduction), [GENERAL GUIDANCE](general-guidance/fx_overview), [FIXM DEVELOPMENT TOOL COMPATIBILITY](fixm-development-tool-compatibility/introduction), [USING FIXM FOR OTHER USE CASES](fixm-for-other-use-cases/using-fixm-core-without-an-application), [HOW TO CREATE A FIXM APPLICATION](how-to-create-application/introduction), [HOW TO CREATE A FIXM EXTENSION](how-to-create-fixm-extension/introduction), [HOW TO GENERATE XML SCHEMAS ...](how-to-generate-xml-schemas/introduction) |
 
 ## Contribute
 
@@ -77,7 +80,8 @@ This sites aims to build a "community knowledge" about the implementation of FIX
 
 ### How to get Access to the FIXM Work Area
 
-First-time users should complete [this form](https://forms.office.com/e/q2WLC0K0Qn) to register for a free account.
+First-time users should follow these [instructions](https://www.fixm.aero/content/accessing-the-fixm-work-area) to register for a free account.
+
 
 ## How to use this Web Site
 
