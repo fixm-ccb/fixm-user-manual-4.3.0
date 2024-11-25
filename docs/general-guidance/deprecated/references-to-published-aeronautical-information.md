@@ -1,4 +1,6 @@
-# References to Published Aeronautical Information
+# References to Published Aeronautical Information - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 Describing the predicted movement of a flight commonly means indicating
 which parts of the infrastructure (ATS routes, waypoints, radio
