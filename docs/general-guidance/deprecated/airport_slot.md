@@ -1,4 +1,6 @@
-# Airport Slot Identification
+# Airport Slot Identification - DEPRECATED
+
+!> This page is deprecated. Please go to this [page](general-guidance/fx_overview) instead.
 
 Airport slots are being used to balance demand against available airport capacity at airports where the
 demand exceeds this capacity. The process of allocating airport slots at
