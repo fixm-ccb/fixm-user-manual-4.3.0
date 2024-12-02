@@ -740,7 +740,7 @@ alternates. Each alternate is one of:
 
 An en-route alternate is represented in the model by attribute 
 `alternateAerodrome` of class `EnRoute` in package `Flight.EnRoute`.
-Each alternate is an `AerodromeReference` (see [this chapter](general-guidance/references-to-published-aeronautical-information?id=references-to-aerodromes)).
+Each alternate is an `AerodromeReference` (see [this chapter](general-guidance/fb_AeronauticalReference?id=aerodromereference)).
 
 The image below presents two possible object models that represent the en-route
 alternate listed below.
@@ -771,7 +771,7 @@ alternates. Each alternate is one of:
 A take-off alternate is represented in the model by
 attribute `takeOffAlternateAerodrome` of class `Departure` in
 package `Flight.Departure`. Each alternate is
-an `AerodromeReference` (see [this chapter](general-guidance/references-to-published-aeronautical-information?id=references-to-aerodromes)).
+an `AerodromeReference` (see [this chapter](general-guidance/fb_AeronauticalReference?id=aerodromereference)).
 
 Refer to section [En-Route Alternate](#en-route-alternate) for
 an equivalent example in the context of en-route alternate.
@@ -1011,7 +1011,7 @@ from a navaid), or an aerodrome. The five classes under 
     with an optional `position` (a `GeographicalPosition` as below).
 
 -   Class `GeographicalPosition` models the geographical location via
-    attribute `pos` of class `LatLongPos` ([see GeographicalPosition](general-guidance/geographical-positions)).
+    attribute `pos` of class `LatLongPos` ([see GeographicalPosition](general-guidance/fb_AeronauticalReference?id=geographicalposition)).
 
 -   Class `AerodromeReference` models the aerodrome via attributes
     `locationIndicator`, `name`, `referencePoint` (a 

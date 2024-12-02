@@ -135,7 +135,7 @@ identified in [this chapter](general-guidance/general-rules-for-data-correctness
 ```
 This example shows the FIXM encoding of a latitude/longitude pair that fails to follow the rules for data correctness from [this chapter](general-guidance/general-rules-for-data-correctness). This example validates from a data structure point of view (that is, it validates against the FIXM Core XML schemas) but is not correct because “NaN” is not a valid number in a latitude/longitude pair.
 
-## References
+## References <!-- {docsify-ignore} -->
 
 ### ICAO References
 
