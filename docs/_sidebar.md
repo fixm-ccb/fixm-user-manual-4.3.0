@@ -12,7 +12,6 @@
   - [Extensions](general-guidance/extensions.md)
 
 
-
 - **FIXM Data Samples**
   - [Overview](fixm-data-samples/overview.md)
 
