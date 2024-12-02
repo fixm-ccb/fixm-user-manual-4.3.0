@@ -53,7 +53,7 @@ click STRATEGY "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/strategic-do
 click CHARTER "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/strategic-docs/charter" "Browse the FIXM Change Management Charter"
 click VERSIONING "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/strategic-docs/versioning_policy" "Browse the FIXM Versioning Policy"
 
-click FIXM_COMPONENTS "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/general-guidance/fx_overview" "Explanations about the main FIXM components"
+click FIXM_COMPONENTS "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/general-guidance/fixm-components-introduction" "Explanations about the main FIXM components"
 click FIXM_DATA_SAMPLES "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/fixm-data-samples/overview" "FIXM data samples"
 click FIXM_ENCODING_GUIDANCE "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/general-guidance/fx_overview" "The general rules always applicable to FIXM"
 click FIXM_FOR_FFICE "https://fixm-ccb.github.io/fixm-user-manual-4.3.0/#/fixm-in-support-of-ffice/ffice-application-for-fixm" "Guidance about the use of FIXM for FF-ICE"
