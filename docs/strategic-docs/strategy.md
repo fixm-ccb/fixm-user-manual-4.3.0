@@ -81,7 +81,7 @@ For practical reasons, the evolution of `FIXM` will necessitate the update and r
 
 #### 2.2.4	FIXM Extensions 
 
-`FIXM`, like AIXM and WXXM, shall support an extension mechanism, and should comply with the core and regional extension concept of ICAO Document 9965 <sup>[[I-05]](#references)</sup>. Supporting extensions is paramount in order to:
+`FIXM`, like AIXM and IWXXM, shall support an extension mechanism, and should comply with the core and regional extension concept of ICAO Document 9965 <sup>[[I-05]](#references)</sup>. Supporting extensions is paramount in order to:
 - Enable Communities of Interest to capture application-specific requirements, without undermining global interoperability of flight information exchanges;
 - Support the interface between implementers of different versions of FIXM;
 - Facilitate the Change Management Process of FIXM.
@@ -107,16 +107,16 @@ Many initiatives have been historically conducted by various ATM communities of 
 
 This chapter lists a number of strategic requirements for `FIXM` with regards to the alignment and connection with other ATM standard developments.
 
-#### 2.4.1	AIXM, WXXM and FIXM
+#### 2.4.1	AIXM, IWXXM and FIXM
 
 The AIXM (Aeronautical Information Exchange Model) is designed to enable the management and distribution of AIS (Aeronautical Information Services) data in digital format. More information about this data exchange model can be found in the website www.AIXM.aero.
-The WXXM (Weather Information Exchange Model) is designed to enable a platform independent, harmonized and interoperable meteorological information exchange covering all the needs of the air transport industry. More information about this data exchange model can be found in the website https://community.wmo.int/en/activity-areas/wis/iwxxm.
+The IWXXM (ICAO Weather Information Exchange Model) is designed for the operational exchange of meteorological information for aviation. More information about this data exchange model can be found in the website https://community.wmo.int/en/activity-areas/wis/iwxxm.
 
 `FIXM` (Flight Information Exchange Model) is designed to enable the interoperability of flight and flow information at a global level.
 
-`FIXM` may overlap in scope with the AIM and MET domains. `FIXM` shall therefore be able to reference AIXM and WXXM when deemed relevant, and shall not redefine their content items.
+`FIXM` may overlap in scope with the AIM and MET domains. `FIXM` shall therefore be able to reference AIXM and IWXXM when deemed relevant, and shall not redefine their content items.
 
-`FIXM` shall rely, as much as possible, on the same foundations as AIXM and WXXM, in order to allow greater interoperability between different ATM data domains. These common foundations may include:
+`FIXM` shall rely, as much as possible, on the same foundations as AIXM and IWXXM, in order to allow greater interoperability between different ATM data domains. These common foundations may include:
 - Standards from the ISO 19100 series;
 - OGC standards and best practices.
 
