@@ -4,9 +4,9 @@
 
 ### 1.1	Introduction to FIXM
 
-The Flight Information Exchange Model (`FIXM`) is an exchange model capturing Flight and Flow information that is globally standardised. The requirement for `FIXM` was identified by the International Civil Aviation Organisation (ICAO) <sup>[[I-01]](#references)</sup> <sup>[[I-02]](#references)</sup> <sup>[[I-03]](#references)</sup> <sup>[[I-12]](#references)</sup> <sup>[[I-13]](#references)</sup> Air Traffic Management Requirements and Performance Panel (ATMRPP) and endorsed at the 12th Air Navigation Conference as part of the Aviation System Block Upgrades (ASBU) and as described in Flight and Flow Information for a Collaborative Environment (FF-ICE) <sup>[[I-05]](#references)</sup>.
+The Flight Information Exchange Model (`FIXM`) is an exchange model capturing Flight and Flow information that is globally standardised. FIXM is the domain specific Information Exchange Model recommended by ICAO [I-6] for implementing FF-ICE information exchanges in accordance with the ICAO PANS-IM requirements on information.
 
-`FIXM` is the equivalent, for the Flight domain, of AIXM (Aeronautical Information Exchange Model) and WXXM (Weather Information Exchange Model) both of which were developed in order to achieve global interoperability for, respectively, AIS and MET information exchange. FIXM is therefore part of a family of technology independent, harmonized and interoperable information exchange models designed to cover the information needs of Air Traffic Management.
+`FIXM` is the equivalent, for the Flight domain, of AIXM (Aeronautical Information Exchange Model) and IWXXM (ICAO Weather Information Exchange Model) both of which were developed in order to achieve global interoperability for, respectively, AIS and MET information exchange. FIXM is therefore part of a family of technology independent, harmonized and interoperable information exchange models designed to cover the information needs of Air Traffic Management. This family forms the “Information Exchange Models” layer of the ICAO SWIM Global Interoperability framework<sup>[[I-10]](#references)</sup>.
 
 According to the ICAO SWIM concept <sup>[[I-10]](#references)</sup>, `FIXM` is one of the models that belong to the “Information Exchange Models” layer of the ICAO SWIM Global Interoperability framework.
 
@@ -81,7 +81,7 @@ For practical reasons, the evolution of `FIXM` will necessitate the update and r
 
 #### 2.2.4	FIXM Extensions 
 
-`FIXM`, like AIXM and WXXM, shall support an extension mechanism, and should comply with the core and regional extension concept of ICAO Document 9965 <sup>[[I-05]](#references)</sup>. Supporting extensions is paramount in order to:
+`FIXM`, like AIXM and IWXXM, shall support an extension mechanism, and should comply with the core and regional extension concept of ICAO Document 9965 <sup>[[I-05]](#references)</sup>. Supporting extensions is paramount in order to:
 - Enable Communities of Interest to capture application-specific requirements, without undermining global interoperability of flight information exchanges;
 - Support the interface between implementers of different versions of FIXM;
 - Facilitate the Change Management Process of FIXM.
@@ -107,16 +107,16 @@ Many initiatives have been historically conducted by various ATM communities of 
 
 This chapter lists a number of strategic requirements for `FIXM` with regards to the alignment and connection with other ATM standard developments.
 
-#### 2.4.1	AIXM, WXXM and FIXM
+#### 2.4.1	AIXM, IWXXM and FIXM
 
 The AIXM (Aeronautical Information Exchange Model) is designed to enable the management and distribution of AIS (Aeronautical Information Services) data in digital format. More information about this data exchange model can be found in the website www.AIXM.aero.
-The WXXM (Weather Information Exchange Model) is designed to enable a platform independent, harmonized and interoperable meteorological information exchange covering all the needs of the air transport industry. More information about this data exchange model can be found in the website www.WXXM.aero.
+The IWXXM (ICAO Weather Information Exchange Model) is designed for the operational exchange of meteorological information for aviation. More information about this data exchange model can be found in the website https://community.wmo.int/en/activity-areas/wis/iwxxm.
 
 `FIXM` (Flight Information Exchange Model) is designed to enable the interoperability of flight and flow information at a global level.
 
-`FIXM` may overlap in scope with the AIM and MET domains. `FIXM` shall therefore be able to reference AIXM and WXXM when deemed relevant, and shall not redefine their content items.
+`FIXM` may overlap in scope with the AIM and MET domains. `FIXM` shall therefore be able to reference AIXM and IWXXM when deemed relevant, and shall not redefine their content items.
 
-`FIXM` shall rely, as much as possible, on the same foundations as AIXM and WXXM, in order to allow greater interoperability between different ATM data domains. These common foundations may include:
+`FIXM` shall rely, as much as possible, on the same foundations as AIXM and IWXXM, in order to allow greater interoperability between different ATM data domains. These common foundations may include:
 - Standards from the ISO 19100 series;
 - OGC standards and best practices.
 
@@ -240,21 +240,11 @@ The picture below provides an illustration of the catalogue of third-parties FIX
 
 ### ICAO References
 
-[I-01]: [ICAO Doc 9854, 1st Edition, 2005](https://www.icao.int/Meetings/anconf12/Document%20Archive/9854_cons_en[1].pdf) - Global Air Traffic Management Operational Concept
-
-[I-02]: [ICAO Doc 9882, 1st Edition, 2007](https://www.icao.int/airnavigation/IMP/Documents/Doc%209882%20-%20Manual%20on%20ATM%20Requirements.pdf) - Manual on Air Traffic Management System Requirements
-
-[I-03]: [Global Air Navigation Plan](https://www4.icao.int/ganpportal/)
-
 [I-05]: [ICAO Doc 9965, 2nd Edition, Volume I, v2022a (DRAFT)](https://portal.icao.int/atmrpp/ATMRPP5%20Montreal%2059%20June%202023/1_Working%20papers/ATMRPP5_WP1000_%20Appendix%20B%20Doc%209965%20Vol%20I%20Concept%20Document_v2022a%20_clean.pdf) - Manual on FF-ICE, Concept document **DRAFT** 
 
 [I-06]: [ICAO Doc 9965, 2nd Edition, Volume II, v0.993 (DRAFT)](https://portal.icao.int/atmrpp/ATMRPP5%20Montreal%2059%20June%202023/1_Working%20papers/ATMRPP5_WP1000_Appendix%20C%20Doc%209965%20Vol%20II%20Implementation%20Guidance%20d0.993_markup.pdf) - Manual on FF-ICE, FF-ICE/R1 Implementation Guidance Manual **DRAFT** 
 
-[I-10]: [**DRAFT** ICAO Manual on System Wide Information Management (SWIM) Implementation, version September 2021](https://portal.icao.int/imp/MeetingDocs/IMP-2/Working%20Papers/Appendix%20A%20to%20IMP_2%20WP006%20%E2%80%93%20Manual%20on%20SWIM%20Implementation.pdf)
-
-[I-12]: [ICAO Doc 9883, 1st Edition](https://portal.icao.int/icao-net/ICAO%20Documents/9883_cons_en.pdf) - Manual on Global Performance of the Air Navigation System
-
-[I-13]: [ICAO Doc 9971, 3st Edition](https://portal.icao.int/icao-net/ICAO%20Documents/9971_cons_en.pdf) - Manual on Collaborative Air Traffic Flow Management]
+[I-10]: [ICAO Manual on System Wide Information Management (SWIM) Implementation, 1st Edition, 2024](https://store.icao.int/en/manual-on-the-system-wide-information-management-swim-implementation-doc-10203)
 
 [I-14]: ​[ICAO Aviation System Block Upgrades (ASBU) framework](https://www4.icao.int/ganpportal/ASBU?_gl=1*1k7ewhd*_ga*MTc2MDEwOTgyOS4xNjU4MzAxNzIy*_ga_992N3YDLBQ*MTY5MDc5MTQzNC4xNi4xLjE2OTA3OTM4NjIuMC4wLjA.)
 
