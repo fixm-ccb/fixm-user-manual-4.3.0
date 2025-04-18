@@ -74,12 +74,6 @@ Identification of a departure airport slot allocated in Europe (from [EUROCONTRO
 
 ---
 
-## `airfileIndicator`
-
-See below - chapter departureAerodrome / departurePoint.
-
----
-
 ## `departureAerodrome` / `departurePoint`
 
 There are three use cases associated with departure points that can be represented in FIXM:
