@@ -12,6 +12,7 @@
   - [Extensions](general-guidance/extensions.md)
 
 
+
 - **FIXM Data Samples**
   - [Overview](fixm-data-samples/overview.md)
 
@@ -44,15 +45,20 @@
 
 
 
+- **FIXM Encoding Guidance<br>(APPLICATIONS)**
+  - [ffice:FficeMessage](general-guidance/ffice_FficeMessage.md)
+
+
+
 - **FIXM Encoding Guidance<br>(Miscellaneous)**
   - [Rules for Absent Data](general-guidance/rules-for-absent-data.md)
-  - [Applying Templates in XML](general-guidance/applying-templates.md)
+  - [Applying Templates in XML](general-guidance/applying_templates.md)
   - [Use of other -XMs](general-guidance/the-use-of-other-exchange-models.md)
 
 
 
 - **Using FIXM in Support of FF-ICE**
-  - [The FF-ICE Application for FIXM](fixm-in-support-of-ffice/ffice-application-for-fixm.md)
+  - [FIXM FF-ICE Message Application](fixm-in-support-of-ffice/ffice-application-for-fixm.md)
   - [FF-ICE Message Templates](fixm-in-support-of-ffice/message-templates.md)
   - [Route/Trajectory Example Data](fixm-in-support-of-ffice/example_data.md)
   - [Examples of FF-ICE Messages](fixm-in-support-of-ffice/example_messages.md)
@@ -111,6 +117,5 @@
 
 
 - **License**
-  - [Copyright 2024](https://fixm.aero/disclaimer.html)
-  - Last updated on <br> *04-Dec-2024*
-
+  - [Copyright 2025](https://fixm.aero/disclaimer.html)
+  - Last updated on <br> *April-2025*
